@@ -1,2 +1,2 @@
-console.lgo('------------');
+console.log('------------');
 console.log('Hello World!');

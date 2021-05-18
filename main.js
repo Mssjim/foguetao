@@ -1,11 +1,9 @@
-console.log('Hello World!');
+const { Client } = require('selfo.js');
 
-timeout = (n) => {
-	setTimeout(() => {
-		console.log(n);
-	}, 3000);
-}
+const bot = new Client();
 
-for(let i=0; i<5; i++) {
-	timeout(i+1);
-}
+bot.on('ready', () => {
+	console.log(bot.user.tag + ' Online!');
+});
+
+bot.login(require('./token.json').token);

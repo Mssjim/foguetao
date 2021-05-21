@@ -1,0 +1,46 @@
+<form action="" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Contato</legend>
+        <label>Nome
+            <input type="text" name="name" required autofocus>
+        </label>
+        <br><br>
+        <label>Email
+            <input type="email" name="email" required autocomplete="email">
+        </label>
+        <br><br>
+        <label>Senha
+            <input type="password" name="password" required pattern="[0-9a-zA-Z]{6,8}">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Outros</legend>
+        <label>Fruta Favorita
+            <input type="text" name="fruit" list="frutas">
+        </label>
+        <label>Cor Favorita
+            <input type="color" name="color">
+        </label>
+        <label>Avatar
+            <input type="file" name="color" accept=".png, .jpg, .jpeg">
+        </label>
+
+        <datalist id="frutas">
+            <option value="Manga"></option>
+            <option value="Laranja"></option>
+            <option value="Cereja"></option>
+        </datalist>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Descrição</legend>
+        <textarea name="description" cols="60" rows="10"></textarea>
+    </fieldset>
+    <br>
+    <label>
+        <input type="checkbox" name="terms"> Aceito os Termos
+    </label>
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>

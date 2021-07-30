@@ -1,0 +1,30 @@
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+    grid-template-areas: 'top top' 'left right';
+}
+
+header {
+    grid-area: top;
+}
+
+.bg {
+    grid-area: left;
+    background: url('../assets/home-bg.svg') no-repeat top/contain;
+}
+
+main {
+    grid-area: right;
+    display: flex;
+    align-items: center;
+}
+
+main .container {
+    width: min(36.3rem 100%);
+}
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}

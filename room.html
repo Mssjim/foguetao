@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions • Sala []</title> <!-- TODO Add room id -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/room.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a href="/">
+                <img src="./assets/logo.svg" alt="Questions"/>
+            </a>
+            <div class="buttons">
+                <div class="button outlined">
+                    #000000
+                    <img src="./assets/copy.svg" alt="Código da Sala">
+                </div>
+                <a class="button" href="./create-room.html">
+                    <img class="white-icon" src="./assets/users.svg" alt="Criar Sala">
+                    Criar Sala
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="question-form">
+                    <h2>Faça sua Pergunta</h2>
+                    <form action="POST" class="tv-form">
+                        <label class="sr-only" for="question">O que você quer perguntar?</label>
+                        <textarea name="question" id="question" cols="30" rows="10" placeholder="O que você quer perguntar?"></textarea>
+                        <footer>
+                            <div>
+                                <img src="./assets/lock.svg" alt="Esta pergunta é anônima">
+                                Esta pergunta é anônima
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section class="questions">
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/avatar.svg" alt="Usuário Anônimo">
+                            </div>
+                            <div class="question">
+                                <p>Lohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.</p>
+                            </div>
+                        </div>
+                        <div class="question-actions">
+                            <a class="button transparent" >
+                                <img src="./assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a class="button transparent">
+                                <img src="./assets/delete.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-wrapper checked">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/avatar.svg" alt="Usuário Anônimo">
+                            </div>
+                            <div class="question">
+                                <p>Lorem .</p>
+                            </div>
+                        </div>
+                        <div class="question-actions">
+                            <a class="button transparent">
+                                <img src="./assets/delete.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>

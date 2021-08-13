@@ -1,0 +1,38 @@
+.modal-wrapper {
+    display: flex;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+
+    background-color: #040911CC;
+}
+
+.modal-wrapper .modal {
+    background-color: var(--color-background);
+    border-radius: 0.8rem;
+    margin: auto 29.5%;
+    padding: 6.4rem;
+    text-align: center;
+}
+
+.modal-wrapper .modal form input {
+    width: min(30rem, 100%);
+    margin-top: 2.4rem;
+}
+
+.modal-wrapper .modal .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.modal-wrapper .modal .buttons .button,
+.modal-wrapper .modal .buttons button {
+    margin: 0 0.4rem;
+}

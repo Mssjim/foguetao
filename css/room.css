@@ -1,20 +1,20 @@
-.buttons {
+header .buttons {
     float: right;
     margin-top: 3.2rem;
     margin-right: 11%;
     display: flex;   
 }
 
-.buttons .button {
+header .buttons .button {
     width: auto;
 }
 
-.buttons .button:nth-child(1) {
+header .buttons .button:nth-child(1) {
     margin-right: 0.8rem;
     padding-left: 1.6rem;
 }
 
-.buttons .button:nth-child(2) {
+header .buttons .button:nth-child(2) {
     padding-right: 2rem;
 }
 

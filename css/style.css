@@ -42,7 +42,7 @@ header img {
     margin: 3.5rem 11%;
 }
 
-h2 {
+h1 {
     color:var(--color-black);
     font-size: clamp(20px, 5vw, 2.8rem);
     font-family: 'Poppins', sans-serif;
@@ -57,6 +57,7 @@ input, button, .button {
 input {
     border: 0.2rem solid var(--color-grey-blue);
     padding: 0 1.2rem;
+    outline: none;
 }
 
 .tv-form {
@@ -114,6 +115,18 @@ button, .button {
 button.outlined, .button.outlined {
     background-color: var(--color-white);
     color: var(--color-primary);
+}
+
+button.red, .button.red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+}
+
+button.grey, .button.grey {
+    background-color: var(--color-grey-light);
+    color: var(--color-grey-dark);
+    border: none;
 }
 
 button.transparent, .button.transparent {

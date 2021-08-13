@@ -7,6 +7,7 @@
     <title>Questions • Sala []</title> <!-- TODO Add room id -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/room.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
     <div class="content">
@@ -29,8 +30,8 @@
         <main>
             <div class="container">
                 <section class="question-form">
-                    <h2>Faça sua Pergunta</h2>
-                    <form action="POST" class="tv-form">
+                    <h1>Faça sua Pergunta</h1>
+                    <form method="POST" action="#" class="tv-form">
                         <label class="sr-only" for="question">O que você quer perguntar?</label>
                         <textarea name="question" id="question" cols="30" rows="10" placeholder="O que você quer perguntar?"></textarea>
                         <footer>
@@ -81,9 +82,30 @@
                         </div>
                     </div>
                 </section>
-                
             </div>
         </main>
     </div>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h1>Excluir Pergunta</h1>
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+            <form method="POST" action="#">
+                <label class="sr-only" for="password">Digite sua senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha"/>
+
+                <div class="buttons">
+                    <div class="button grey">
+                        Cancelar
+                    </div>
+                    <button class="red">
+                        Sim, Excluir
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
